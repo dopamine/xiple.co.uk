@@ -1,0 +1,63 @@
+title:  Prompt Start
+email: prompt-start@xiple.co.uk
+description: >- # this means to ignore newlines until "baseurl:"
+  Zita's corner on the www
+baseurl: "" # the subpath of your site, e.g. /blog
+domain: "https://xiple.co.uk"
+url: https://xiple.co.uk # the base hostname & protocol for your site, e.g. http://example.com
+imgsrc: "FIXME"
+bsky_username: xiple.co.uk
+github_username:  dopamine
+
+author:
+  name: Zita
+  url: https://lateralco.studio
+  email: prompt-start@xiple.co.uk
+
+nav_pages:
+  - blog.md
+  - archive.md
+  - about.md
+
+rss: "atom.xml"
+
+collections:
+  test:
+    output: true
+
+# Build settings
+# theme: minima
+
+sass:
+  sass_dir: assets/_scss
+
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+exclude:
+ - setup-log.md
+ - setup-ideas.md
+ - setup.md
+ - .sass-cache/
+ - .jekyll-cache/
+ - .git/
+ - gemfiles/
+ - Gemfile
+ - Gemfile.lock
+ - CNAME
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

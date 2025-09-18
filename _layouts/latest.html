@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<main class="post__wrapper">
+
+{% for post in site.posts limit:1 %}
+  <article class="post">
+    <div class="post__header">
+      <h1 class="post__title">{{ post.title | escape }}</h1>
+      <div class="post__meta">
+          {% include time-to-read.html -%}
+      </div>
+    </div>
+    <div class="post__content">
+      {{ content | toc | img_prefix }}
+    </div>
+    <!-- div class="post__colophon">
+      Published by <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
+      on <time>{{ post.date | date: "%e %B %Y" }}</time>
+    </div-->
+  {% include post-nav.html %}
+  </article>
+{% endfor %}
+
+<h4>More recent notes</h4>
+  <ul class="post-list">
+    {% for post in site.posts offset:1 limit:5 %}
+        <li class="post-list-item" data-category="{{ post.categories | join: ';' }}" {% if post.img %}data-img="{{ post.img | img_url_prefix }}"{% endif %}>
+          <span class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </span>
+          <!-- span class="post-time">{{ post.date | date: "%e %b" }}</span-->
+          <span class="time-to-read">
+            {%- if post.draft != true %}
+              {% include time-to-read.html -%}
+            {% else %}
+              Draft
+            {% endif %}
+          </span>
+        </li>
+    {% endfor %}
+  </ul>
+</main>
