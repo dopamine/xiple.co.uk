@@ -12,10 +12,11 @@ github_username:  dopamine
 author:
   name: Zita
   url: https://lateralco.studio
-  email: prompt-start@xiple.co.uk
+  email: prompt-start/squiggle/xiple.co.uk
 
 nav_pages:
-  - blog.md
+  - blog/index.md
+  - notes/index.md
   - archive.md
   - about.md
 
@@ -23,7 +24,7 @@ rss: "atom.xml"
 
 collections:
   test:
-    output: true
+    output: false
 
 # Build settings
 # theme: minima
@@ -33,6 +34,7 @@ sass:
 
 plugins:
   - jekyll-feed
+  - jekyll-timeago
 
 markdown: kramdown
 kramdown:
@@ -56,8 +58,14 @@ exclude:
  - Gemfile
  - Gemfile.lock
  - CNAME
+ - TODO
+ - _site
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+jekyll_timeago :
+  depth: 1

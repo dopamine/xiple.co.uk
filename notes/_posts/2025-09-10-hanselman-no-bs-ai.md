@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Scott Hanselman’s takes on no-BS AI"
+title:  "Takeaways from No-BS AI for Humans talk"
 
 coverimg: 20XX-XX-XX-folder/image
 ---
@@ -14,5 +14,7 @@ Smashing Magazine did a 3-session special on AI that this was part of, here’s 
 On AI “smartness” and the effects/limitations of training:
 
 > When you take a million monkeys and a million typewriters and they all slap the keyboard, eventually Shakespeare pops out. That's math. […But] when the parrot that lives at your aunt house swears at you, that's  not because the parrot is smart. That's because your aunt swears.
+
+And also:
 
 > Why do models not say “I don’t know” when they doesn’t know? That’s because those types of conversations aren’t in their training data. They’re trained on example conversations that answer questions with confidence, so they ape that behaviour even in conversations when they don’t know.

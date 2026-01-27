@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Personal data safety basics with AI"
+title:  "Personal AI data safety basics"
 
 coverimg: 20XX-XX-XX-folder/image
 ---
@@ -11,9 +11,9 @@ An important PSA:
 
 In summary, as you play with AI, always avoid connecting these three things for your own safety:
 
-- access to private data
-- exposure to untrusted content
-- ability to externally communicate
+1. access to private data
+1. exposure to untrusted content
+1. ability to externally communicate
 
 To give a graphic example of why:
 

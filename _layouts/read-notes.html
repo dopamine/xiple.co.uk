@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<main class="blog-posts">
+
+{% assign note-posts = site.posts | where: 'categories', "notes" %}
+
+
+  {%- for post in note-posts limit: 10 %}
+    <article class="notes-list">
+      <div class="notes-list__header">
+        <h1 class="notes-list__title"><span class="visually-hidden">A note from </span>{{ post.date  | timeago }}</h1>
+        <div class="notes-list__meta visually-hidden">
+            <time>{{ post.date | date: "%e %B %Y" }}</time>
+        </div>
+      </div>
+      <div class="post__content">
+        {{ post.content | toc | img_prefix }}
+      </div>
+    </article>
+    {% endfor %}
+
+
+    <div class="post__nav">
+      <a class="next" href="/archive.html">
+          <small>Read more</small>
+          <span>Browse the archive</span>
+      </a>
+  </div>
+</main>

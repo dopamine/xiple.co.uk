@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<main class="blog-posts">
+
+{% assign blog-posts = site.posts | where: 'categories', "blog" %}
+
+  {%- for post in blog-posts limit: 5 %}
+    <article class="post-list-item">
+      <div class="post-list__header">
+        <h1 class="post-list__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>&nbsp;&raquo;
+        </h1>
+        <div class="post-list__meta">
+              {% include time-to-read.html -%}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+    
+
+    <div class="post__nav">
+      <a class="next" href="/archive.html">
+          <small>Read more</small>
+          <span>Browse the archive</span>
+      </a>
+  </div>
+</main>

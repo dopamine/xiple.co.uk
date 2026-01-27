@@ -1,24 +1,24 @@
 ---
 layout: page
-title: About
+title: "About"
 permalink: /about/
 ---
-Hey there, Zita here. This is my corner on the www. Also find me at:
-- [Bluesky](https://bsky.app/profile/xiple.co.uk)
-- [Freelance site](https://lateralco.studio)
 
-### This site runs on
+Welcome to my corner of the www,\
+a hub for everything I read and write about. 
+{: .lead}
 
-- Github Pages
-- Jekyll
-- Custom theme from scratch
-- Cloudflare R2 for image hosting
 
-...and doesn't cost me a penny.
+<small>MOTTO</small>\
+Own your digital turf and tend to your digital garden.\
+Then share it with the world. Information wants to be free.
+\
+\
+\
+[Placeholder intro to self]
+\
+\
+\
+Also find me on [Bluesky](https://bsky.app/profile/xiple.co.uk) &middot; [Freelance site](https://lateralco.studio)
 
-### Projects borrwed from, people to thank
-
-- [Persephone by @erlzhang](https://github.com/erlzhang/jekyll-theme-persephone)
-- [Poole by @mod](https://github.com/poole/poole)
-- [Jekyll image gallery script by Michael Rose](https://github.com/mmistakes/jekyll-sample-content)
-- [MiniMasonry.js by Spope](https://github.com/Spope/MiniMasonry.js)
+Read more about how I set it up and how I run it for free: [About this site](/about-this-site/)

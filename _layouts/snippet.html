@@ -13,8 +13,15 @@ layout: default
       {{ content | toc | img_prefix }}
     </div>
     <div class="post__colophon">
-      Published on <time>{{ page.date | date: "%e %B %Y" }}</time>
+      Published by <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
+      on <time>{{ page.date | date: "%e %B %Y" }}</time>
     </div>
   </article>
-  {% include post-nav.html %}
+  
+  <div class="post__nav">
+    <a class="next" href="/archive.html">
+        <small>Read more</small>
+        <span>Browse the archive</span>
+    </a>
+  </div>
 </main>
